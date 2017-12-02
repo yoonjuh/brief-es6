@@ -32,8 +32,8 @@ numbers.reduce((sum, number) => {
 // 60
 ```
 ### `every` and `some` Helpers
-##### every and some helpers has very sumilar functionality. The both helpers will return a boolean value. 
-##### The both helpers will loop over the array but the only difference is that how they combind the result.
+##### every and some helpers have very sumilar functionality. The both helpers will return a boolean value. 
+##### The both helpers will loop over the array but the only difference is that how they combind the results.
 ``` js
 let veggies = [ 
     { name: 'Carrot' price: 15},
