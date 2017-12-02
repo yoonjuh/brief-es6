@@ -63,6 +63,22 @@ let title = "Software Engineer"; // title can be change
 let age = 30; // age will change
 ```
 
+### Syntactic Sugar
+#### The Syntax is not changed but we can use arrow function instead of function keyword.
+```js
+//es5
+var add = function(a) {
+    return a * 2;
+}
+//es6 
+const add = (a) => {
+    return a * 2
+}
+// more simple
+const add = a => a * 2
+/* when there is only 1 argument then we don't have to write "()" 
+        in this case, we don't put the ";" after the function body. 
+        Also, when there is only one line of function body, we don't  user "{}" */
 
 
 
