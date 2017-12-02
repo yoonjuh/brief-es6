@@ -31,7 +31,7 @@ numbers.reduce((sum, number) => {
 }, 0);
 // 60
 ```
-# `every` and `some` Helpers
+### `every` and `some` Helpers
 ##### every and some helpers have very sumilar functionality. The both helpers will return a boolean value. 
 ##### The both helpers will loop over the array but the only difference is that how they combind the results.
 ``` js
@@ -52,7 +52,7 @@ veggies.some((veggy) => {
 // (Carrot = false || Onion = true || Cucumber = true) === true;
 ```
 
-###The Keywords `const` and `let`
+### The Keywords `const` and `let`
 ##### In the ES6 syntax, the `var` keyword is replaced by `const` and `let` 
 ##### We can do anything with `var` keyword but the simply reason why we use those new keywords is that 
 ##### the const variable cannot be change under any circumstances. On the other hand, `let` variable can be change
