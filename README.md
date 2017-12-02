@@ -52,7 +52,7 @@ veggies.some((veggy) => {
 // (Carrot = false || Onion = true || Cucumber = true) === true;
 ```
 
-### The Keywords `const` and `let`
+### `const` and `let`
 ##### In the ES6 syntax, the `var` keyword is replaced by `const` and `let` 
 ##### We can do anything with `var` keyword but the simply reason why we use those new keywords is that 
 ##### the const variable cannot be change under any circumstances. On the other hand, `let` variable can be change
