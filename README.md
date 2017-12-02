@@ -15,8 +15,8 @@ const postForComment = (posts, comment) => {
         return post.id == comment.postId;  
     })
  }
- //postForComment(posts, comment);
-{id: 1, title: "New Post"};
+ postForComment(posts, comment);
+//{id: 1, title: "New Post"};
 ```
  
 
