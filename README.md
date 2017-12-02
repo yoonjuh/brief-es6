@@ -103,15 +103,16 @@ const color = 'red';
 
 const Car = {
   color, 
- // this line of code refers to " color: color," if if the name and value pair share the same name, you can just simply write one of it
+ /* this line of code refers to " color: color," 
+ if the name and value pair share the same name, you can just simply write one of it */
   drive() {
     return 'Vroom!';
   },
   getColor() {
     return this.color;
   }
-  /*drive() and getColor() used to be  "drive: function()", "getColor: function ()" but in es6, you get reduce it like the above
-    */
+  /*drive() and getColor() used to be  "drive: function()",
+  "getColor: function ()" but in es6, you get reduce it like the above */
 };
 
 
