@@ -17,6 +17,20 @@ const postForComment = (posts, comment) => {
  }
  postForComment(posts, comment);
 //{id: 1, title: "New Post"};
-```
+```60
  
+### `reduce` Helper
+##### reduce helper takes function as an argument. Also it will takes the default vaule of the function's argument 
+#####  the data type can be anything ex) 0, [], {}
+
+``` js
+let numbers = [10, 20, 30];
+let sum = 0;
+
+numbers.reduce((sum, number) => {
+    return sum + number;
+}, 0);
+// 60
+```
+
 
