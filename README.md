@@ -1,9 +1,10 @@
 # brief-es6
 
-#### find() helper
+### `find` Helper
 
 ##### find helperr will return the exact one item after the function
 
+``` js 
 ex)
 
 const posts = [
@@ -19,6 +20,6 @@ const postForComment = (posts, comment) => {
     
     });
  };
-
+```
  
 
