@@ -55,12 +55,12 @@ veggies.some((veggy) => {
 ### `const` and `let`
 ##### In the ES6 syntax, the `var` keyword is replaced by `const` and `let` 
 ##### We can do anything with `var` keyword but the simply reason why we use those new keywords is that 
-##### the const variable cannot be change under any circumstances. On the other hand, `let` variable can be change
+##### the const variable cannot be change under any circumstances. On the other hand, `let` variable can be change.
 ##### Therefore, javascript code can be more readable than the `var` keyword used be.
 ```js
-const name = "Jane"; // name variable usually not changes
+const name = "John"; // name variable usually not changes
 let title = "Software Engineer"; // title can be change
-let hourlyWage = 40; // age will change
+let age = 30; // age will change
 ```
 
 
