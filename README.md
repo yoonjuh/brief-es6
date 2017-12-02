@@ -63,8 +63,9 @@ let title = "Software Engineer"; // title can be change
 let age = 30; // age will change
 ```
 
-### Syntactic Sugar
-#### The Syntax is not changed but we can use arrow function instead of function keyword.
+### Syntactic Sugar 
+##### The Syntax is not changed but we can use arrow function instead of function keyword.
+##### `Arrow Function`
 ```js
 //es5
 var add = function(a) {
@@ -79,6 +80,22 @@ const add = a => a * 2
 /* when there is only 1 argument then we don't have to write "()" 
         in this case, we don't put the ";" after the function body. 
         Also, when there is only one line of function body, we don't  user "{}" */
+```
+##### `templateString`
+##### Now we don't have to write bunch of ", ' and + 
+##### we can use ``(backtick) and ${}
+```js
+//Simple es5 concatenation
+function getMessage() {
+    var yaer = new Date().getFullYear();
+    return 'The year is' + year;
+};
+// TemplateString
+const getMessage = () => {    
+    const year = new Date().getFullYear();
+    return `The year is ${year}`;
+};
+
 
 
 
