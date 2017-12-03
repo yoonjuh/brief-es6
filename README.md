@@ -131,6 +131,37 @@ const makeAjaxRequest = (url, method = "GET") => {
   return method;
 }
 ```
+### `rest` and `spread` Operators
+##### The both operator have the exact same appearance.
+##### what the `rest` operator does that it temporarily takes a list of values 
+##### to an array then go through the defined logic operations 
+```js
+`rest`
+//es5
+function addNumbers(numbers) {
+  return numbers.reduce((sum, number) => {
+    return sum + number
+  },0)
+}
+addNumbers([1,2,3,4,5]);// 15
+// In this case, we cannot handle the numbers that are not in an array.
+//es6
+const addNumbers1 = (...numbers) => {
+  return numbers.reduce((sum, number) => {
+    return sum + number;
+  }, 0)
+}
+addNumbers1(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+`speard`
+const defaultColors = ['red', 'green'];
+const userFavoriteColors = [ 'orange', 'yellow'];
+const fallColors = ['fire red', 'fall orange'];
+//es5
+defaultColors.concat(userFavoriteColors);
+//es6 (spread operator)
+['blue','green',...fallColors, ...defaultColors, ...userFavoriteColors];
+```
 
 
 
