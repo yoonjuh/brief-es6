@@ -97,7 +97,7 @@ const getMessage = () => {
 };
 ```
 ##### `Enhanced Object Literals`
-##### Just a bit of syntactic sugar here 
+##### Just a bit of syntactic sugar here.
 ```js
 const color = 'red';
 
@@ -117,7 +117,7 @@ const Car = {
 ```
 
 ### `Default Function Arguments`
-#### In es6 you can simply set the default value of function arguments
+#### In es6, you can simply set the default value of function arguments.
 ```js
 // es5
 /*function makeAjaxRequest(url, method) {
