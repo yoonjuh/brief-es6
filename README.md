@@ -113,7 +113,23 @@ const Car = {
   }
   /*drive() and getColor() used to be  "drive: function()",
   "getColor: function ()" but in es6, you get reduce it like the above */
-};
+};```
+
+### `Default Function Arguments`
+#### In es6 you can simply set the default value of function arguments
+```js
+// es5
+/*function makeAjaxRequest(url, method) {
+  if (!method) {
+    method = "GET";
+  }
+} */
+
+//es6
+const makeAjaxRequest = (url, method = "GET") => {
+  return method;
+}
+```
 
 
 
