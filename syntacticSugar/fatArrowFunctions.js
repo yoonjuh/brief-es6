@@ -28,3 +28,6 @@ const numbers = [1, 2, 3];
 // });
 " ====== es6 even more simple========="
 numbers.map(number =>  2 * number);
+
+const add1 = number => number * 2
+                    && number + 11;
