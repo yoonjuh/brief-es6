@@ -136,7 +136,7 @@ const makeAjaxRequest = (url, method = "GET") => {
 ##### what the `rest` operator does that it temporarily takes a list of values 
 ##### to an array then go through the defined logic operations 
 ```js
-`rest`
+//rest
 //es5
 function addNumbers(numbers) {
   return numbers.reduce((sum, number) => {
@@ -153,7 +153,7 @@ const addNumbers1 = (...numbers) => {
 }
 addNumbers1(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-`speard`
+//speard
 const defaultColors = ['red', 'green'];
 const userFavoriteColors = [ 'orange', 'yellow'];
 const fallColors = ['fire red', 'fall orange'];
