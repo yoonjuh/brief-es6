@@ -129,7 +129,7 @@ const Car = {
 //es6
 const makeAjaxRequest = (url, method = "GET") => {
   return method;
-}
+} 
 ```
 ### `rest` and `spread` Operators
 ##### The both operator have the exact same appearance.
