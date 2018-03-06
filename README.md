@@ -163,6 +163,18 @@ defaultColors.concat(userFavoriteColors);
 ['blue','green',...fallColors, ...defaultColors, ...userFavoriteColors];
 ```
 
+=========================================================================
+
+### `Generator`
+
+##### Generator is  allow developers to control functionality in Javascript manually in custom way...
+
+```js
+function* counter() {
+
+    yield "something";
+    yield "something";
+}
 
 
 
