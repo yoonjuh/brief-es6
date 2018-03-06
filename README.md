@@ -175,6 +175,9 @@ function* counter() {
     yield "something";
     yield "something";
 }
+// Each yield is work as a break point;
+```
+
 
 
 
