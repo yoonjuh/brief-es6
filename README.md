@@ -189,7 +189,7 @@ function* teamIterator(team) {
     yield team.lead;
     yield team.manager;
     yield team.engineer;
-    yeild* team.testingTeam;
+    yield* team.testingTeam;
 }
 
 const name = []
