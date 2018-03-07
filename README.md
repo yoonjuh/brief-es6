@@ -170,12 +170,34 @@ defaultColors.concat(userFavoriteColors);
 ##### Generator is  allow developers to control functionality in Javascript manually in custom way...
 
 ```js
-function* counter() {
-
-    yield "something";
-    yield "something";
+const testingTeam = {
+    lead: 'vem',
+    tester: 'watt'
+    [Symbol.iterator]: function* (){
+        yield lead;
+        yield tester;
+    },
 }
-// Each yield is work as a break point;
+const engineeringTeam = {
+    testingTeam,
+    lead: 'Jill',
+    manager: 'amanda',
+    engineer: 'hugo',
+}
+
+function* teamIterator(team) {
+    yield team.lead;
+    yield team.manager;
+    yield team.engineer;
+    yeild* team.testingTeam;
+}
+
+const name = []
+for(let name of teamIterator(engineeringTeam)){
+    names.push(name);
+}
+// for of loop is a perfect match with Generator
+// [Symbol.iterator] is identical as just a key value of that  object
 ```
 
 
