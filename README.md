@@ -197,6 +197,7 @@ for(let name of teamIterator(engineeringTeam)){
     names.push(name);
 }
 // for of loop is a perfect match with Generator
+// Generator is commonly used for the background processing
 // [Symbol.iterator] is identical as just a key value of that  object
 ```
 
