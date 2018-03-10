@@ -183,19 +183,19 @@ const engineeringTeam = {
     lead: 'Jill',
     manager: 'amanda',
     engineer: 'hugo',
+    [Symbol.iterator]: function* () {
+        yield this.lead;
+        yield this.manager;
+        yield this.engineer;
+        yield* this.testingTeam;
+    }
 }
 
-function* teamIterator(team) {
-    yield team.lead;
-    yield team.manager;
-    yield team.engineer;
-    yield* team.testingTeam;
-}
-
-const name = []
-for(let name of teamIterator(engineeringTeam)){
+const name = [];
+for(let name of engineeringTeam){
     names.push(name);
 }
+
 // for of loop is a perfect match with Generator
 // Generator is commonly used for the background processing
 // [Symbol.iterator] is identical as just a key value of that  object
