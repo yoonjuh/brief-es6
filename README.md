@@ -200,7 +200,7 @@ const { city: homeTown = 'Ulsan' }
 //ex
 const { city: homeTown = 'Ulsan' } = person.location;
 console.log(city) // not working 
-console.log(homeTown) // Toronto Because city is already assigned value
+console.log(homeTown) // Toronto. Because city is already assigned value
 // if city does not assigned than the default value 'Ulsan' will be display
 
 /* Object Destructuring is quite impotant feature of ES6. Every time we say person.location.city or .something, 
