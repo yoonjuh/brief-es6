@@ -164,6 +164,52 @@ defaultColors.concat(userFavoriteColors);
 ```
 
 =========================================================================
+### `Object Destructuring`
+
+##### This syntax will enable us to impove our application performances by reduce execution! 
+
+```js
+const person = {
+    name: Edwin,
+    age: 27,
+    location: {
+        city: Toronto,
+        current: Mississauga,
+    },
+}
+
+const { name, age } = person; 
+// this is exactly identical as (person.name) and (person.age)
+
+const { city, current } = person.location;
+// person.location.city and person.location.current
+
+const { homeTown } = person.location;
+// In case of homeTown, because the object does not contain a value named homeTown, 
+// It will generate a name property of homeTown but it is undefined now 
+const { homeTown = 'Ulsan' } = person.location;
+// We can also assign a default value. if there is a name value pair of homeTown inside of the object,
+// it will use the value, but other than that It will use this default value
+const { city: homeTown = 'Ulsan' }
+// We can also do something like this 
+// What this doing right now is assign homeTown with default value to exiting property "city"
+// It is kind of alias effect if somebody call homeTown property, It will automatically reference the city property
+// One thing you should keep in mind that after assign a exiting property as another name, you can only access it with 
+//assigned name 
+
+//ex
+const { city: homeTown = 'Ulsan' } = person.location;
+console.log(city) // not working 
+console.log(homeTown) // Toronto Because city is already assigned value
+// if city does not assigned than the default value 'Ulsan' will be display
+
+/* Object Destructuring is quite impotant feature of ES6. Every time we say person.location.city or .something, 
+    because the values are in depth of the object, it takes more time to grasp those values and it will result in 
+    low performance. However, if we use this efficient syntax, it is already navigated until right before the actual value,
+    as a result of that, Javascript will get the value what it needs to grasp from the beggining, it will end up with high 
+    performance!*/
+   
+```
 
 ### `Generator`
 
